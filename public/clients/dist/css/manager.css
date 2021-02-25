@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+.myaccount{
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    
+}
+.myaccount .topmyaccount{
+    padding: 1rem .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.topmyaccount .leftmyaccount h5{
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+.topmyaccount .rightmyaccount a{
+    color: #fafafd;
+    background-color: #286bb8;
+    border-color: #286bb8;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    padding: .8rem 1rem;
+    font-family: 'Inter', sans-serif;
+}
+.middleaccount{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.middleaccount .leftmiddleaccount{
+    width: 98%;
+    background-color: #286bb8;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.leftmiddleaccount{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.leftmiddleaccount div.lefticon{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+.leftmiddleaccount div.lefticon img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.idshow{
+    border: 1px solid white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.leftmiddleaccount div.righticon h6{
+    font-size: 14px;
+    margin: .5rem 0;
+}
+.leftmiddleaccount div.righticon{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    vertical-align: middle;
+    color: white;
+    font-family: 'Inter', sans-serif; 
+}
+.middleaccount .rightmiddleaccount{
+    width: 98%;
+    background-color: #286bb8;
+    padding: 1rem;
+    border-radius: 3px;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.middleaccount .rightmiddleaccount .infocontent{
+  
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    color: #fafafd;
+    padding: .1rem .8rem;
+}
+.middleaccount .rightmiddleaccount .infocontent:nth-child(2),
+.middleaccount .rightmiddleaccount .infocontent:nth-child(1){
+    border-right: 1px solid #fafafd;
+}
+.bottomaccount{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    overflow-x: scroll;
+
+}
+.bottomaccount .topbottomaccount span.topic{
+    font-size: 22px;
+}
+ 
+.bottomaccount .topbottomaccount{
+    background-color: #286bb8;
+    color: #fafafd;
+    font-family: 'Inter', sans-serif;
+    padding: 1rem .5rem;
+}
+.orderform{
+    /* background-color: #286bb8; */
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    padding: 5rem .8rem; 
+    background-color: #E8EDF2;
+}
+.orderform form{
+    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 5%), 0 1px 10px 0 rgb(0 0 0 / 5%);
+    background-color: white;
+    padding: 2rem 1rem;
+    margin-top: -5rem;
+}
+.sectiononereview span{
+    font-size: 14px;
+    color: #273142;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: capitalize;
+} 
+.sectiononejobinfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.sectiononejobinfo .leftsectiononejobinfo{
+    width: 98%;
+    padding: 1.5rem 1rem;
+    background-color: #286bb8;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.oneleft{
+    border: 1px solid white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+} 
+.oneleft span{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color: #fafafd;
+}
+.onelefts{
+    border: 1px solid #286bb8;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: #286bb8;
+}
+.onelefts span{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color: #fafafd;
+}
+.oneright{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    vertical-align: middle;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.rightsectiononejobinfo{
+    width: 98%;
+    margin-left: 2%;
+    background-color: #286bb8;
+}
+.rightsectiononejobinfo .clientpay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    padding: 1rem 0;
+    border-bottom: 1px solid #fafafd;
+}
+.rightsectiononejobinfo .clientpay h5 span{
+    color: hotpink;
+}
+.rightsectiononejobinfo .clientpay h5{
+    color: #fafafd;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+.rightsectiononejobinfo .clientaction{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.clientaction .deleteorder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+    padding-top: 1rem;
+}
+.clientaction .deleteorder a{
+    outline: none;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    padding: .5rem 2rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #fafafd;
+    background-color: rgb(240, 14, 127);
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.clientaction .uploadorder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+    padding-top: 1rem;
+}
+.clientaction .uploadorder a{
+    outline: none;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    padding: .5rem 2rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #fafafd;
+    background-color: rgb(240, 14, 127);
+    border: none;
+    font-size: 15px;
+    border-radius: 6px;
+}
+.topicedit{
+    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 5%), 0 1px 10px 0 rgb(0 0 0 / 5%);
+    background-color: white; 
+    margin-bottom: 1rem;
+}
+.toptopicedit{
+    background-color: #E8EDF2;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.toptopicedit .lefttopedit{
+    color: indigo;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.toptopicedit .righttopedit button{
+    outline: none; 
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif; 
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #fafafd;
+    background-color:#286bb8;
+    border: none;
+    font-size: 14px; 
+    border-radius: 3px;
+    padding: .2rem 2rem;
+}
+.bottomtopicedit {
+    padding: 1rem;
+}
+.bottomtopicedit p{
+    font-family: 'Inter', sans-serif;
+}
+.bmoredetails{
+    display: flex;
+    width: 50%; 
+    flex-direction: column;
+    
+}
+.bmoredetails .eachbdetail{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+.dtopavatar{
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+
+}
+@media only screen and (max-width: 840px) {
+    .sectiononejobinfo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+         
+    }
+
+    .sectiononereview span{
+        font-size: 18px;  
+        line-height: 26px; 
+    }
+    .oneright h5{
+        font-size: 16px;
+    }
+    .oneright h6{
+        font-size: 14px;
+    }
+    
+     
+}
+@media only screen and (max-width: 676px) {
+    .sectiononereview span{
+        font-size: 14px;  
+        line-height: 26px; 
+    }
+   
+    .sectiononejobinfo .leftsectiononejobinfo{
+        width: 100%;
+        padding: 1.5rem 1rem; 
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .oneleft span{
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        color: #fafafd;
+    }
+    .oneright h5{
+        font-size: 14px;
+    }
+    .oneright h6{
+        font-size: 12px;
+    }
+    .toptopicedit .lefttopedit h5{ 
+        font-size: 14px !important; 
+    }
+    .bottomtopicedit p{
+        font-size: 12px !important;
+    }
+    .bmoredetails{
+        display: flex;
+        width: 100%; 
+        flex-direction: column;  
+    }
+    .bmoredetails .eachbdetail{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 1rem;
+        font-family: 'Inter', sans-serif; 
+    }
+    .myaccount .topmyaccount{
+        padding: 1rem .5rem;
+        display: flex;
+        flex-direction: column; 
+    }
+    .topmyaccount .leftmyaccount h5{
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 500; 
+    }
+    .middleaccount{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .middleaccount .leftmiddleaccount{
+        width: 100%;
+        background-color: #286bb8;
+        padding: 1rem;
+        border-radius: 0px;
+        border-bottom: 1px solid #fafafd;
+    }
+    .leftmiddleaccount{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .leftmiddleaccount div.righticon h6{
+        font-size: 12px;
+        margin: .5rem 0;
+    }
+    .leftmiddleaccount div.righticon h5{
+        font-size: 14px; 
+    }
+    .leftmiddleaccount div.righticon{
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        vertical-align: middle;
+        color: white;
+        font-family: 'Inter', sans-serif; 
+        padding-top: 1rem;
+    }
+    .middleaccount .rightmiddleaccount{
+        width: 100%;
+        background-color: #286bb8;
+        padding: 1rem;
+        border-radius: 0px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .middleaccount .rightmiddleaccount .infocontent{
+        display: flex;
+        justify-content:space-between; 
+        color: #fafafd;
+        padding: .3rem .8rem;
+    }
+    .middleaccount .rightmiddleaccount .infocontent:nth-child(2),
+    .middleaccount .rightmiddleaccount .infocontent:nth-child(1){
+        border-right: none;
+        border-bottom: 1px solid #fafafd;
+    }
+    .bottomaccount .topbottomaccount{
+        background-color: #286bb8;
+        color: #fafafd;
+        font-family: 'Inter', sans-serif;
+        padding: 1rem .5rem;
+        width: 100%;
+    }
+    .leftsectiononejobinfo .oneright{
+        padding-top: 1rem;
+    }
+    .rightsectiononejobinfo{
+        width: 100%;
+        margin-left: 0;
+        background-color: #286bb8;
+    }
+    .rightsectiononejobinfo .clientaction{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 1rem;
+    }
+    .clientaction .deleteorder,
+    .clientaction .uploadorder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        height: 80%;
+        padding-top: 1rem;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .sectiononereview span{
+        font-size: 14px;  
+        line-height: 26px; 
+    }
+    .sectiononejobinfo{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sectiononejobinfo .leftsectiononejobinfo{
+        width: 100%;
+        padding: 1.5rem 1rem; 
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .oneleft span{
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        color: #fafafd;
+    }
+    .oneright h5{
+        font-size: 14px;
+    }
+    .oneright h6{
+        font-size: 12px;
+    }
+    .toptopicedit .lefttopedit h5{ 
+        font-size: 14px !important; 
+    }
+    .bottomtopicedit p{
+        font-size: 12px !important;
+    }
+    .bmoredetails{
+        display: flex;
+        width: 100%; 
+        flex-direction: column;  
+    }
+    .bmoredetails .eachbdetail{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 1rem;
+        font-family: 'Inter', sans-serif; 
+    }
+    .myaccount .topmyaccount{
+        padding: 1rem .5rem;
+        display: flex;
+        flex-direction: column; 
+    }
+    .topmyaccount .leftmyaccount h5{
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 500; 
+    }
+    .middleaccount{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .middleaccount .leftmiddleaccount{
+        width: 100%;
+        background-color: #286bb8;
+        padding: 1rem;
+        border-radius: 0px;
+        border-bottom: 1px solid #fafafd;
+    }
+    .leftmiddleaccount{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .leftmiddleaccount div.righticon h6{
+        font-size: 12px;
+        margin: .5rem 0;
+    }
+    .leftmiddleaccount div.righticon h5{
+        font-size: 14px; 
+    }
+    .leftmiddleaccount div.righticon{
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        vertical-align: middle;
+        color: white;
+        font-family: 'Inter', sans-serif; 
+        padding-top: 1rem;
+    }
+    .middleaccount .rightmiddleaccount{
+        width: 100%;
+        background-color: #286bb8;
+        padding: 1rem;
+        border-radius: 0px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .middleaccount .rightmiddleaccount .infocontent{
+        display: flex;
+        justify-content:space-between; 
+        color: #fafafd;
+        padding: .3rem .8rem;
+    }
+    .middleaccount .rightmiddleaccount .infocontent:nth-child(2),
+    .middleaccount .rightmiddleaccount .infocontent:nth-child(1){
+        border-right: none;
+        border-bottom: 1px solid #fafafd;
+    }
+    .bottomaccount .topbottomaccount{
+        background-color: #286bb8;
+        color: #fafafd;
+        font-family: 'Inter', sans-serif;
+        padding: 1rem .5rem;
+        width: 100%;
+    }
+    .leftsectiononejobinfo .oneright{
+        padding-top: 1rem;
+    }
+    .rightsectiononejobinfo{
+        width: 100%;
+        margin-left: 0;
+        background-color: #286bb8;
+    }
+    .rightsectiononejobinfo .clientaction{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 1rem;
+    }
+    .clientaction .deleteorder,
+    .clientaction .uploadorder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        height: 80%;
+        padding-top: 1rem;
+        text-align: center;
+    }
+}

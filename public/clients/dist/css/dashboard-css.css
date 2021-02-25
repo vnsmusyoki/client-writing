@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+ .dashboardone{
+     height: 100vh;
+     width: 100%;
+     margin-left: 1rem; 
+ }
+ .container-fluid.maincontainerfluid{
+    padding-left: 3rem !important;
+ }
+ .topdashboardone{
+     display: flex;
+     height: 10vh;
+     justify-content: space-between; 
+ }
+ .topdashboardone div{
+     display: flex;
+     vertical-align: middle;
+     align-items: center;
+ }
+ .topdashboardone div:first-child h5{
+    color: #273142;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: capitalize;
+ }
+ .topdashboardone div:last-child a{
+     color: #ffff;
+     background-color: #167EE6;
+     padding:.5rem 1rem;
+     border-radius: 20px;
+ }
+ .topdashboardone div:last-child .dtopavatar{
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     margin-right: .8rem;
+ }
+.bottomdashboardone .nav-item{
+    color: #367fd3;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color .3s; 
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+ }
+ .bottomdashboardone .nav-item.active{
+     color: #367fd3 !important;
+     background-color: transparent !important;
+     outline: none;
+     border: none;
+     border-bottom: 2px solid #167EE6;
+ }
+ .bottomdashboardone .tab-content .customerorders{ 
+     margin-top: 1rem; 
+ }
+  
+ .bottomdashboardone .customerorders .bottomcontent{
+     background-color: #FAFAFD; 
+     min-height: 50vh;
+     border-bottom-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     overflow-x: scroll;
+ }
+ .bottomdashboardone .customerorders .topcontent .lefttopcontent h5{
+    color: #454d5c;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Inter', sans-serif;
+ }
+ .bottomdashboardone .customerorders .topcontent {
+    display: flex;
+    min-height: 10vh;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: #F2F2F4; 
+    width: 100%;
+    align-items: center;
+    vertical-align: middle;
+ }
+ .bottomdashboardone .customerorders .topcontent .righttopcontent form div.scontent .toprightinput:focus{
+     border-color: #167EE6;
+ }
+ .bottomdashboardone .customerorders .topcontent .righttopcontent form div.scontent .toprightinput{
+    box-sizing: border-box;
+    margin: 0;
+    font-variant: inherit;
+    list-style: none;
+    font-feature-settings: inherit;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-width: 0;
+    padding: 4px 7px;
+    color: #636a77;
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: #e5e6e9;
+    background-image: none;
+    border: 1px solid #d9dadd;
+    border-radius: 4px;
+    transition: all .3s;
+    font-size: 18px;
+ }
+ .bottomcontent{
+     display: flex;
+     justify-content: center;
+     vertical-align: middle;
+     flex-direction: column;
+     align-items: center;
+ }
+ .topbottomcontent h5{
+     text-align: center;
+     margin-top: -4rem;
+     font-size: 20px;
+     line-height: 28px;
+     color: #454d5c;
+     font-family: 'Inter', sans-serif;
+ }
+ .topbottomcontent p{
+    color: #636a77;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+ }
+.mynotifications .topmynotifications{
+    padding: 2rem 0;
+}
+
+.mynotifications .topmynotifications h5{
+    color: #454d5c; 
+    line-height: 28px;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+}
+.mynotifications .bottommynotifications h5{
+    text-align: center;
+     margin-top: -4rem;
+     font-size: 20px;
+     line-height: 28px;
+     color: #454d5c;
+     font-family: 'Inter', sans-serif;
+}
+.mynotifications .bottommynotifications p{
+    color: #636a77;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+} 
+.mynotifications .bottommynotifications{
+    background-color: #FAFAFD;
+    min-height: 60vh;
+    margin-top: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: column;
+}
+.bottomguidelines{
+    background-color: #FAFAFD;
+    min-height: 60vh;
+    margin-top: 1rem;
+    border-radius: 1px;
+    padding: 2rem .5rem;
+}
+.bottomguidelines h3{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #454d5c;
+}
+.bottomguidelines h4{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #167EE6;
+}
+.ginstruction{
+    margin-bottom: 2rem;
+}
+.ginstruction h5{
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #454d5c;
+}
+.ginstruction p{
+    color: #636a77;
+    font-size: 14px;
+    line-height: 1.6; 
+    font-family: 'Inter', sans-serif;
+}
+.ginstruction h6{
+    color: rgb(243, 12, 128);
+    font-size: 14px;
+    line-height: 1.6; 
+    font-family: 'Inter', sans-serif;
+}
+@media only screen and (max-width: 950px) {
+    .dashboardone{ 
+        width: 100%;
+        margin-left:0;  
+    }
+    .container-fluid.maincontainerfluid{
+        padding-left: 0 !important;
+     }
+}
+@media only screen and (max-width: 576px) {
+   
+    .topdashboardone{
+        display: flex;
+        height: auto;
+        padding:1rem .5rem; 
+        flex-direction: column;
+    }
+   
+}
+@media only screen and (max-width: 840px) {
+    
+    .topdashboardone div:first-child h5{ 
+         
+        font-size: 18px;
+        line-height: 26px;
+        text-transform: capitalize;
+        text-align: center;
+     }
+     .bottomdashboardone .nav-item{ 
+        font-size: 16px;
+     }
+     .bottomdashboardone .customerorders .topcontent {
+        display: flex;
+        min-height: 10vh; 
+        flex-direction: column; 
+     }
+     .bottomdashboardone .customerorders .topcontent .lefttopcontent h5{
+       
+        font-size: 14px;
+        line-height: 20px; 
+     }
+     .mynotifications .topmynotifications h5{
+        color: #454d5c; 
+        line-height: 20px;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+    }
+    .bottomcontents, .bottomcontent{
+        overflow-x: scroll;
+    }
+}
+@media only screen and (max-width: 330px) {
+   
+    .topdashboardone, .topdashboardone div:last-child, .topdashboardone div:first-child{
+        display: flex;
+        height: auto;
+        padding:1rem .5rem; 
+        flex-direction: column;
+    }
+    .topdashboardone div:last-child .dtopavatar{
+        
+        margin-bottom: .8rem;
+
+    }
+    .topdashboardone div:first-child h5{ 
+        color:#273142;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 46px;
+        text-transform: capitalize;
+        text-align: center;
+     }
+     .bottomdashboardone .nav-item{ 
+        font-size: 12px;
+     }
+     .bottomdashboardone .customerorders .topcontent {
+        display: flex;
+        min-height: 10vh; 
+        flex-direction: column; 
+     }
+     .bottomdashboardone .customerorders .topcontent .lefttopcontent h5{
+       
+        font-size: 12px;
+        line-height: 20px; 
+     }
+     .bottomdashboardone .customerorders .topcontent .righttopcontent{
+         display: none;
+         height: 0 !important;
+     }
+     .bottomcontent table thead tr th{
+         font-size: 12px; 
+     }
+     .bottomcontent table tbody tr td{
+         font-size: 10px; 
+     }
+     .mynotifications .topmynotifications{
+        padding: 1rem;
+    }
+    .mynotifications .topmynotifications h5{
+   
+        line-height: 20px; 
+        font-size: 15px;
+    }
+    .bottomcontents, .bottomcontent{
+        overflow-x: scroll;
+    }
+}
