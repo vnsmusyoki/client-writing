@@ -2,21 +2,8 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+use App\Http\Controllers\PayPalController;
+use App\Http\Controllers\PaymentController;
 
 Auth::routes(['verify'=> true]);
 
@@ -24,7 +11,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
-// ALL PAGES 
+// ALL PAGES
 
 Route::get('/', [App\Http\Controllers\pages\contentController::class, 'index']);
 Route::get('/about-us', [App\Http\Controllers\pages\contentController::class, 'aboutus']);
@@ -105,7 +92,7 @@ Route::get('admin/open-thread/{token}', [App\Http\Controllers\admin\accountContr
 Route::post('admin/send-chat-message/{token}', [App\Http\Controllers\admin\accountController::class, 'sendthreadmessage']);
 
 
-// WRITER LINKS 
+// WRITER LINKS
 Route::get('/writer/dashboard', [App\Http\Controllers\writer\accountController::class, 'index'])->name('writer');
 Route::get('/writer/dashboard/my-transactions', [App\Http\Controllers\writer\accountController::class, 'mytransactions']);;
 Route::get('/writer/dashboard/my-notifications', [App\Http\Controllers\writer\accountController::class, 'mynotifications']);;
@@ -123,13 +110,23 @@ Route::get('writer/dashboard/time-extension-requests', [App\Http\Controllers\wri
 Route::post('writer/upload-final-document', [App\Http\Controllers\writer\accountController::class, 'uploadcompletedwork']);
 Route::get('writer/final-document-upload/{token}', [App\Http\Controllers\writer\accountController::class, 'finaldocument']);
 Route::get('writer/my-messages', [App\Http\Controllers\writer\accountController::class, 'mymessages']);
-Route::post('writer/start-chat-thread', [App\Http\Controllers\writer\accountController::class, 'startthread']); 
-Route::get('writer/chat-thread/{token}', [App\Http\Controllers\writer\accountController::class, 'threadchats']); 
-Route::get('writer/revision-order-details/{token}', [App\Http\Controllers\writer\accountController::class, 'revisionjobdetails']); 
-Route::get('writer/myaccount', [App\Http\Controllers\writer\accountController::class, 'myaccount']); 
-Route::get('writer/settings', [App\Http\Controllers\writer\accountController::class, 'mysettings']); 
-Route::get('writer/remove-avatar', [App\Http\Controllers\writer\accountController::class, 'removeavatar']); 
-Route::post('writer/update-avatar', [App\Http\Controllers\writer\accountController::class, 'updateavatar']); 
-Route::post('writer/updatepassword', [App\Http\Controllers\writer\accountController::class, 'updatepassword']); 
-Route::post('writer/updateemail', [App\Http\Controllers\writer\accountController::class, 'updateemail']); 
-Route::post('writer/update-phone-number', [App\Http\Controllers\writer\accountController::class, 'updatephone']); 
+Route::post('writer/start-chat-thread', [App\Http\Controllers\writer\accountController::class, 'startthread']);
+Route::get('writer/chat-thread/{token}', [App\Http\Controllers\writer\accountController::class, 'threadchats']);
+Route::get('writer/revision-order-details/{token}', [App\Http\Controllers\writer\accountController::class, 'revisionjobdetails']);
+Route::get('writer/myaccount', [App\Http\Controllers\writer\accountController::class, 'myaccount']);
+Route::get('writer/settings', [App\Http\Controllers\writer\accountController::class, 'mysettings']);
+Route::get('writer/remove-avatar', [App\Http\Controllers\writer\accountController::class, 'removeavatar']);
+Route::post('writer/update-avatar', [App\Http\Controllers\writer\accountController::class, 'updateavatar']);
+Route::post('writer/updatepassword', [App\Http\Controllers\writer\accountController::class, 'updatepassword']);
+Route::post('writer/updateemail', [App\Http\Controllers\writer\accountController::class, 'updateemail']);
+Route::post('writer/update-phone-number', [App\Http\Controllers\writer\accountController::class, 'updatephone']);
+
+// PAYPAL LINKS
+Route::get('handle-payment',  [PayPalController::class, 'handlePayment'])->name('make.payment');
+Route::get('cancel-payment',  [PayPalController::class, 'paymentCancel'])->name('cancel.payment');
+Route::get('payment-success',  [PayPalController::class, 'paymentSuccess'])->name('success.payment');
+
+Route::get('payment', [PaymentController::class, 'index']);
+Route::get('charge', [PaymentController::class, 'charge']);
+Route::get('paymentsuccess', [PaymentController::class, 'paymentsuccess']);
+Route::get('paymenterror', [PaymentController::class, 'paymenterror']);

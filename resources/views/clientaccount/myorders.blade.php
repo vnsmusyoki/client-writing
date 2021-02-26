@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="bottomdashboardone">
-            
+
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active customerorders" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class="topcontent">
@@ -22,15 +22,15 @@
                         </div>
                         <div class="righttopcontent">
                             <form action="">
-                                <div class="scontent"> 
+                                <div class="scontent">
                                 <input type="text" class="toprightinput" placeholder="search">
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="bottomcontent">
-                        @if ($tasks->count() >=1) 
-                                
+                        @if ($tasks->count() >=1)
+
                                 <table class="table">
                                     <thead>
                                       <tr>
@@ -58,7 +58,7 @@
                                         <td>{{ $task->amount }} dollars </td>
                                         <td>{{ $task->language }}</td>
                                         <td>
-                                            
+
                                             @if ($task->status == "admin")
                                                 <button class="btn  btn-warning">in progress</button>
                                             @else
@@ -71,17 +71,17 @@
                                             @if ($task->status == "completed")
                                             <a href="{{ url('client/jobreview/'.$task->task_id) }}" class="btn btn-success"> <i class="fas fa-cloud-download-alt"></i> download</a>
                                             @else
-                                            <button class="btn  btn-warning">waiting</button>
+                                            <a href="{{ route('make.payment') }}" class="btn  btn-primary">Pay</a>
                                             @endif
-                                            
-                                            
+
+
                                             <td>
                                       </tr>
                                     @endforeach
                                     </tbody>
                                   </table>
-                               
-                            
+
+
                         @else
                         <div class="topbottomcontent">
                             <img src="{{ asset('pages/images/no-opened.svg') }}" alt="">
@@ -89,10 +89,10 @@
                             <p>You have not uploaded any task so far</p>
                         </div>
                         @endif
-                        
+
                     </div>
                 </div>
-                 
+
               </div>
         </div>
     </div>
